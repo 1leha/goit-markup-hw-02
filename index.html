@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <title>goit-markup-hw-01 (Домашка 01)</title>
   </head>
   <body>
@@ -12,16 +12,18 @@
       <!-- Контейнер для контента -->
       <div class="container">
         <nav class="header__navigation">
-          <a class="header__logo logo" href="#"><span>Web</span>Studio</a>
+          <a class="header__logo logo" href="./index.html"
+            ><span class="logo__web">Web</span>Studio</a
+          >
           <ul class="header__menu">
             <li class="menu__item">
-              <a href="#" class="menu__link">Студия</a>
+              <a href="" class="menu__link menu__link-active">Студия</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Портфолио</a>
+              <a href="./portfolio.html" class="menu__link">Портфолио</a>
             </li>
             <li class="menu__item">
-              <a href="#" class="menu__link">Контакты</a>
+              <a href="" class="menu__link">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -47,7 +49,8 @@
       <section class="peculiarities">
         <!-- Контейнер для контента -->
         <div class="container">
-          <h2>скрытый заголовок</h2>
+          <!-- Скрытый заголовок -->
+          <h2 class="title title-hidden">Особенности</h2>
           <ul class="peculiarities__list">
             <li class="list__item">
               <h3 class="item__title">Внимание к деталям</h3>
@@ -76,6 +79,7 @@
           </ul>
         </div>
       </section>
+
       <section class="specialization">
         <!-- Контейнер для контента -->
         <div class="container">
@@ -109,59 +113,63 @@
           </ul>
         </div>
       </section>
+      
       <section class="our-team">
         <!-- Контейнер для контента -->
         <div class="container">
           <h2 class="title">Наша команда</h2>
           <ul class="our-team__wrapper">
-            <li class="our-team__column">
+            <li class="our-team__item team-card">
               <img
-                class="item__image"
+                class="team-card__image"
                 width="270"
                 src="img/team_img1.jpg"
                 alt="Игорь Демьяненко. Product Designer"
               />
-              <h3>Игорь Демьяненко</h3>
-              <p>Product Designer</p>
+              <h3 class="team-card__title">Игорь Демьяненко</h3>
+              <p class="team-card__profession">Product Designer</p>
             </li>
-            <li class="our-team__column">
+            <li class="our-team__item team-card">
               <img
-                class="item__image"
+                class="team-card__image"
                 width="270"
                 src="img/team_img2.jpg"
                 alt="Ольга Репина. Frontend Developer"
               />
-              <h3>Ольга Репина</h3>
-              <p>Frontend Developer</p>
+              <h3 class="team-card__title">Ольга Репина</h3>
+              <p class="team-card__profession">Frontend Developer</p>
             </li>
-            <li class="our-team__column">
+            <li class="our-team__item team-card">
               <img
-                class="item__image"
+                class="team-card__image"
                 width="270"
                 src="img/team_img3.jpg"
                 alt="Николай Тарасов. Marketing"
               />
-              <h3>Николай Тарасов</h3>
-              <p>Marketing</p>
+              <h3 class="team-card__title">Николай Тарасов</h3>
+              <p class="team-card__profession">Marketing</p>
             </li>
-            <li class="our-team__column">
+            <li class="our-team__item team-card">
               <img
-                class="item__image"
+                class="team-card__image"
                 width="270"
                 src="img/team_img4.jpg"
                 alt="Михаил Ермаков. UI Designer"
               />
-              <h3>Михаил Ермаков</h3>
-              <p>UI Designer</p>
+              <h3 class="team-card__title">Михаил Ермаков</h3>
+              <p class="team-card__profession">UI Designer</p>
             </li>
           </ul>
         </div>
+        <ul></ul>
       </section>
     </main>
     <footer class="footer">
       <!-- Контейнер для контента -->
       <div class="container footer__container">
-        <a class="footer__logo logo" href="#"><span>Web</span>Studio</a>
+        <a class="footer__logo logo" href="./index.html"
+          ><span class="logo__web">Web</span>Studio</a
+        >
         <address class="footer__address">
           <ul class="address__list">
             <li class="address-list__item">
