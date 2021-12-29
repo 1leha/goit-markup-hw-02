@@ -4,45 +4,52 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>goit-markup-hw-01 (Домашка 01)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>goit-markup-hw-02 (Домашка 02)</title>
   </head>
   <body>
     <header class="header">
       <!-- Контейнер для контента -->
       <div class="container">
+        <!-- Навигация -->
         <nav class="header__navigation">
-          <a class="header__logo logo" href="./index.html"
-            ><span class="logo__web">Web</span>Studio</a
+          <a class="link header__logo logo" href="./index.html"
+            ><span class="logo-blue">Web</span>Studio</a
           >
-          <ul class="header__menu">
+          <ul class="header__menu menu list">
             <li class="menu__item">
-              <a href="" class="menu__link menu__link-active">Студия</a>
+              <a class="link menu__link menu__link-active" href="">Студия</a>
             </li>
             <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link">Портфолио</a>
+              <a class="link menu__link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="menu__item">
-              <a href="" class="menu__link">Контакты</a>
+              <a class="link menu__link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="header__contacts">
-          <li class="header-contacts__item">
-            <a class="header__email email" href="mailto:info@example.com">info@example.com</a>
+        <ul class="header__contacts contacts list">
+          <li class="contacts__item">
+            <a class="link header__email email" href="mailto:info@example.com">info@example.com</a>
           </li>
-          <li class="header-contacts__item">
-            <a class="header__phone phone" href="tel:+380991111111">+38 099 111 11 11</a>
+          <li class="contacts__item">
+            <a class="link header__phone phone" href="tel:+380991111111">+38 099 111 11 11</a>
           </li>
         </ul>
       </div>
     </header>
     <main class="main">
-      <section class="page-top">
+      <section class="hero">
         <!-- Контейнер для контента -->
         <div class="container">
-          <h1 class="page-top__title">Эффективные решения<br />для вашего бизнеса</h1>
-          <button class="page-top__button">Заказать услугу</button>
+          <h1 class="hero__title">Эффективные решения<br />для вашего бизнеса</h1>
+          <button class="hero__button">Заказать услугу</button>
         </div>
       </section>
 
@@ -51,7 +58,7 @@
         <div class="container">
           <!-- Скрытый заголовок -->
           <h2 class="title title-hidden">Особенности</h2>
-          <ul class="peculiarities__list">
+          <ul class="peculiarities__list list">
             <li class="list__item">
               <h3 class="item__title">Внимание к деталям</h3>
               <p class="item__text">
@@ -85,10 +92,10 @@
         <div class="container">
           <h2 class="specialization__title title">Чем мы занимаемся</h2>
           <!-- Контейнер для флекса -->
-          <ul class="specialization__wrapper">
+          <ul class="specialization__wrapper list">
             <li class="specialization__column">
               <img
-                class="specialization__item"
+                class="specialization__image"
                 width="370"
                 src="img/spec_box1.jpg"
                 alt="Разработка десктоп приложений"
@@ -96,7 +103,7 @@
             </li>
             <li class="specialization__column">
               <img
-                class="specialization__item"
+                class="specialization__image"
                 width="370"
                 src="img/spec_box2.jpg"
                 alt="Разработка мобильных приложений"
@@ -104,7 +111,7 @@
             </li>
             <li class="specialization__column">
               <img
-                class="specialization__item"
+                class="specialization__image"
                 width="370"
                 src="img/spec_box3.jpg"
                 alt="WEB design"
@@ -113,12 +120,12 @@
           </ul>
         </div>
       </section>
-      
+
       <section class="our-team">
         <!-- Контейнер для контента -->
         <div class="container">
           <h2 class="title">Наша команда</h2>
-          <ul class="our-team__wrapper">
+          <ul class="our-team__wrapper list">
             <li class="our-team__item team-card">
               <img
                 class="team-card__image"
@@ -161,25 +168,26 @@
             </li>
           </ul>
         </div>
-        <ul></ul>
       </section>
     </main>
     <footer class="footer">
       <!-- Контейнер для контента -->
-      <div class="container footer__container">
-        <a class="footer__logo logo" href="./index.html"
-          ><span class="logo__web">Web</span>Studio</a
+      <div class="container">
+        <a class="link footer__logo logo" href="./index.html"
+          ><span class="logo-blue">Web</span>Studio</a
         >
         <address class="footer__address">
-          <ul class="address__list">
-            <li class="address-list__item">
+          <ul class="footer__contacts contacts list">
+            <li class="contacts__item">
               <p class="footer__location">г. Киев, пр-т Леси Украинки, 26</p>
             </li>
-            <li class="address-list__item">
-              <a class="footer__email email" href="mailto:info@example.com">info@example.com</a>
+            <li class="contacts__item">
+              <a class="link footer__email email" href="mailto:info@example.com"
+                >info@example.com</a
+              >
             </li>
-            <li class="address-list__item">
-              <a class="footer__phone phone" href="tel:+380991111111">+38 099 111 11 11</a>
+            <li class="contacts__item">
+              <a class="link footer__phone phone" href="tel:+380991111111">+38 099 111 11 11</a>
             </li>
           </ul>
         </address>
