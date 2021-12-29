@@ -1,0 +1,97 @@
+:root {
+  /* Переменные основных цветов */
+  --color-brand: #2196f3;
+  --color-primary: #212121;
+  --color-secondary: #757575;
+  --color-third: #f5f4fa;
+  --color-white: #ffffff;
+  --color-white60: rgba(250, 255, 255, 0.6);
+  --color-footer: #2f303a;
+
+  /* Переменные цветов активности */
+  --color-active: #2196f3;
+
+  /* Шрифты */
+  --font-logo: 'Raleway', sans-serif;
+  --font-main: 'Roboto', sans-serif;
+}
+
+/* Глобальные стили страницы */
+body {
+  font-family: var(--font-main), Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-primary);
+}
+
+/* Обнуляет подчеркивание ссылок */
+.link {
+  text-decoration: none;
+}
+
+/* Обнуляет оформления списков */
+.list {
+  list-style-type: none;
+}
+
+/* Стили для логотипа */
+.logo {
+  font-family: var(--font-logo);
+  font-size: 26px;
+  color: var(--color-primary);
+}
+.logo-blue {
+  color: var(--color-brand);
+}
+
+/* Стили для меню */
+.menu {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+.menu__link {
+  color: var(--color-primary);
+}
+.menu__link:hover,
+.menu__link:focus {
+  color: var(--color-active);
+}
+.menu__link-active {
+  color: var(--color-active);
+}
+
+.email,
+.phone {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  color: var(--color-secondary);
+}
+.phone:hover,
+.phone:focus,
+.email:hover,
+.email:focus {
+  color: var(--color-active);
+}
+
+/* Стили для header */
+.header {
+}
+.container {
+}
+.header__navigation {
+}
+.header__logo {
+}
+.header__menu {
+}
+.header__contacts {
+}
+
+.header__email {
+}
+
+.header__phone {
+}
