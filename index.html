@@ -13,73 +13,78 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <title>goit-markup-hw-02 (Домашка 02)</title>
   </head>
+
   <body>
+    <!-- Хедер -->
     <header class="header">
       <!-- Контейнер для контента -->
       <div class="container">
         <!-- Навигация -->
-        <nav class="header__navigation">
-          <a class="link header__logo logo" href="./index.html"
+        <nav class="header-navigation">
+          <a class="link header-logo logo" href="./index.html"
             ><span class="logo-blue">Web</span>Studio</a
           >
-          <ul class="header__menu menu list">
-            <li class="menu__item">
-              <a class="link menu__link menu__link-active" href="">Студия</a>
+          <ul class="list menu">
+            <li>
+              <a class="link link-active" href="">Студия</a>
             </li>
-            <li class="menu__item">
-              <a class="link menu__link" href="./portfolio.html">Портфолио</a>
+            <li>
+              <a class="link" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="menu__item">
-              <a class="link menu__link" href="">Контакты</a>
+            <li>
+              <a class="link" href="">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="header__contacts contacts list">
-          <li class="contacts__item">
-            <a class="link header__email email" href="mailto:info@example.com">info@example.com</a>
+        <ul class="list header-contacts">
+          <li>
+            <a class="link email" href="mailto:info@example.com">info@example.com</a>
           </li>
-          <li class="contacts__item">
-            <a class="link header__phone phone" href="tel:+380991111111">+38 099 111 11 11</a>
+          <li>
+            <a class="link phone" href="tel:+380991111111">+38 099 111 11 11</a>
           </li>
         </ul>
       </div>
     </header>
+
+    <!-- Основной контент -->
     <main class="main">
       <section class="hero">
         <!-- Контейнер для контента -->
         <div class="container">
-          <h1 class="hero__title">Эффективные решения<br />для вашего бизнеса</h1>
-          <button class="hero__button">Заказать услугу</button>
+          <h1 class="title">Эффективные решения<br />для вашего бизнеса</h1>
+          <button class="button">Заказать услугу</button>
         </div>
       </section>
 
+      <!-- Секция особенности -->
       <section class="peculiarities">
         <!-- Контейнер для контента -->
         <div class="container">
           <!-- Скрытый заголовок -->
           <h2 class="title title-hidden">Особенности</h2>
-          <ul class="peculiarities__list list">
-            <li class="list__item">
-              <h3 class="item__title">Внимание к деталям</h3>
-              <p class="item__text">
+          <ul class="list">
+            <li>
+              <h3 class="title">Внимание к деталям</h3>
+              <p class="text">
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li class="list__item">
-              <h3 class="item__title">Пунктуальность</h3>
-              <p class="item__text">
+            <li>
+              <h3 class="title">Пунктуальность</h3>
+              <p class="text">
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li class="list__item">
-              <h3 class="item__title">Планирование</h3>
-              <p class="item__text">
+            <li>
+              <h3 class="title">Планирование</h3>
+              <p class="text">
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li class="list__item">
-              <h3 class="item__title">Современные технологии</h3>
-              <p class="item__text">
+            <li>
+              <h3 class="title">Современные технологии</h3>
+              <p class="text">
                 Значимость этих проблем настолько очевидна, что реализация плановых заданий.
               </p>
             </li>
@@ -87,35 +92,31 @@
         </div>
       </section>
 
+      <!-- Секция специализация -->
       <section class="specialization">
         <!-- Контейнер для контента -->
         <div class="container">
-          <h2 class="specialization__title title">Чем мы занимаемся</h2>
+          <h2 class="title">Чем мы занимаемся</h2>
           <!-- Контейнер для флекса -->
-          <ul class="specialization__wrapper list">
-            <li class="specialization__column">
+          <ul class="list">
+            <li>
               <img
-                class="specialization__image"
+                class="image"
                 width="370"
                 src="img/spec_box1.jpg"
                 alt="Разработка десктоп приложений"
               />
             </li>
-            <li class="specialization__column">
+            <li>
               <img
-                class="specialization__image"
+                class="image"
                 width="370"
                 src="img/spec_box2.jpg"
                 alt="Разработка мобильных приложений"
               />
             </li>
-            <li class="specialization__column">
-              <img
-                class="specialization__image"
-                width="370"
-                src="img/spec_box3.jpg"
-                alt="WEB design"
-              />
+            <li>
+              <img class="image" width="370" src="img/spec_box3.jpg" alt="WEB design" />
             </li>
           </ul>
         </div>
@@ -125,69 +126,69 @@
         <!-- Контейнер для контента -->
         <div class="container">
           <h2 class="title">Наша команда</h2>
-          <ul class="our-team__wrapper list">
-            <li class="our-team__item team-card">
+          <ul class="list our-team-list">
+            <li>
               <img
-                class="team-card__image"
+                class="image"
                 width="270"
                 src="img/team_img1.jpg"
                 alt="Игорь Демьяненко. Product Designer"
               />
-              <h3 class="team-card__title">Игорь Демьяненко</h3>
-              <p class="team-card__profession">Product Designer</p>
+              <h3 class="name">Игорь Демьяненко</h3>
+              <p class="profession">Product Designer</p>
             </li>
-            <li class="our-team__item team-card">
+            <li>
               <img
-                class="team-card__image"
+                class="image"
                 width="270"
                 src="img/team_img2.jpg"
                 alt="Ольга Репина. Frontend Developer"
               />
-              <h3 class="team-card__title">Ольга Репина</h3>
-              <p class="team-card__profession">Frontend Developer</p>
+              <h3 class="name">Ольга Репина</h3>
+              <p class="profession">Frontend Developer</p>
             </li>
-            <li class="our-team__item team-card">
+            <li>
               <img
-                class="team-card__image"
+                class="image"
                 width="270"
                 src="img/team_img3.jpg"
                 alt="Николай Тарасов. Marketing"
               />
-              <h3 class="team-card__title">Николай Тарасов</h3>
-              <p class="team-card__profession">Marketing</p>
+              <h3 class="name">Николай Тарасов</h3>
+              <p class="profession">Marketing</p>
             </li>
-            <li class="our-team__item team-card">
+            <li>
               <img
-                class="team-card__image"
+                class="image"
                 width="270"
                 src="img/team_img4.jpg"
                 alt="Михаил Ермаков. UI Designer"
               />
-              <h3 class="team-card__title">Михаил Ермаков</h3>
-              <p class="team-card__profession">UI Designer</p>
+              <h3 class="name">Михаил Ермаков</h3>
+              <p class="profession">UI Designer</p>
             </li>
           </ul>
         </div>
       </section>
     </main>
+
+    <!-- Футер -->
     <footer class="footer">
       <!-- Контейнер для контента -->
       <div class="container">
-        <a class="link footer__logo logo" href="./index.html"
+        <a class="link footer-logo logo" href="./index.html"
           ><span class="logo-blue">Web</span>Studio</a
         >
-        <address class="footer__address">
-          <ul class="footer__contacts contacts list">
-            <li class="contacts__item">
-              <p class="footer__location">г. Киев, пр-т Леси Украинки, 26</p>
+        <address class="address">
+          <ul class="contacts list">
+            <li>
+              <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
             </li>
-            <li class="contacts__item">
-              <a class="link footer__email email" href="mailto:info@example.com"
-                >info@example.com</a
-              >
+            <li>
+              <a class="link email" href="mailto:info@example.com">info@example.com</a>
             </li>
-            <li class="contacts__item">
-              <a class="link footer__phone phone" href="tel:+380991111111">+38 099 111 11 11</a>
+            <li>
+              <a class="link phone" href="tel:+380991111111">+38 099 111 11 11</a>
             </li>
           </ul>
         </address>

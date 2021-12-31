@@ -14,11 +14,20 @@
   /* Шрифты */
   --font-logo: 'Raleway', sans-serif;
   --font-main: 'Roboto', sans-serif;
+
+  --fsize-hero: 50px;
+  --fsize-title: 36px;
+  --fsize-card-title: 16px;
+  --fsize-card-descript: 16 px;
+  --fsize-menu: 14px;
+  --fsize-text: 14px;
+  --fsize-button: 16px;
 }
 
 /* Глобальные стили страницы */
 body {
   font-family: var(--font-main), Verdana, Geneva, Tahoma, sans-serif;
+  font-size: var(--fsize-text);
   background-color: var(--color-white);
   color: var(--color-primary);
 }
@@ -42,33 +51,50 @@ body {
 .logo-blue {
   color: var(--color-brand);
 }
+.button {
+  cursor: pointer;
+  font-size: var(--fsize-button);
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  background-color: var(--color-third);
+  color: var(--color-primary);
+}
+.button:hover,
+.button:focus {
+  background-color: var(--color-active);
+  color: var(--color-white);
+}
 
 /* Стили для меню */
 .menu {
-  font-weight: 700;
-  font-size: 14px;
+  font-weight: 500;
+  font-size: var(--fsize-menu);
   line-height: 16px;
   letter-spacing: 0.02em;
 }
-.menu__link {
+.menu .link {
   color: var(--color-primary);
 }
-.menu__link:hover,
-.menu__link:focus {
+/* реакции меню */
+.menu .link:hover,
+.menu .link:focus {
   color: var(--color-active);
 }
-.menu__link-active {
+.menu .link-active {
   color: var(--color-active);
 }
 
+/* Стили для контактов */
 .email,
 .phone {
   font-weight: 500;
-  font-size: 14px;
+  font-size: var(--fsize-menu);
   line-height: 16px;
   letter-spacing: 0.02em;
   color: var(--color-secondary);
 }
+/* реакции контактов */
 .phone:hover,
 .phone:focus,
 .email:hover,
@@ -76,22 +102,99 @@ body {
   color: var(--color-active);
 }
 
-/* Стили для header */
-.header {
-}
-.container {
-}
-.header__navigation {
-}
-.header__logo {
-}
-.header__menu {
-}
-.header__contacts {
+/* Стили для заголовков */
+.title {
+  font-size: var(--fsize-title);
+  font-weight: 700;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
 }
 
-.header__email {
+/* Стили для скрытых заголовков
+(не изучали. Возможно не так, потом переделаю...) */
+.title-hidden {
+  display: none;
+  font-size: var(--fsize-title);
 }
 
-.header__phone {
+/* Стили для Героя */
+.hero {
+  background-color: var(--color-primary);
+}
+.hero .title {
+  font-size: var(--fsize-hero);
+  color: var(--color-white);
+}
+.hero .button {
+  background-color: var(--color-brand);
+  color: var(--color-white);
+}
+.hero .button:hover,
+.hero .button:focus {
+  background-color: var(--color-third);
+  color: var(--color-primary);
+}
+
+/* Стили для "Особенности" */
+.peculiarities .title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.peculiarities .text {
+  font-size: var(--fsize-text);
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+/* Стили для "Чем мы занимаемся"
+ */
+
+/* Стили для "Наша команда"
+ */
+.our-team .name {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.our-team .profession {
+  font-size: var(--fsize-card-descript);
+  line-height: 19px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--color-secondary);
+}
+
+/* Стили для Портфолио
+ */
+.portfolio-list .title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 36px;
+  text-align: left;
+  letter-spacing: 0.06em;
+}
+.portfolio-list .description {
+  font-size: var(--fsize-card-descript);
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  color: var(--color-secondary);
+}
+
+/* Стили для Футер */
+.footer {
+  background-color: var(--color-footer);
+}
+.footer .logo {
+  color: var(--color-white);
+}
+.address {
+  font-style: normal;
+  color: var(--color-white);
 }
