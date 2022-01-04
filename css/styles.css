@@ -4,30 +4,21 @@
   --color-primary: #212121;
   --color-secondary: #757575;
   --color-third: #f5f4fa;
+  --color-fourth: #2f303a;
   --color-white: #ffffff;
   --color-white60: rgba(250, 255, 255, 0.6);
-  --color-footer: #2f303a;
 
   /* Переменные цветов активности */
   --color-active: #2196f3;
 
   /* Шрифты */
-  --font-logo: 'Raleway', sans-serif;
-  --font-main: 'Roboto', sans-serif;
-
-  --fsize-hero: 50px;
-  --fsize-title: 36px;
-  --fsize-card-title: 16px;
-  --fsize-card-descript: 16 px;
-  --fsize-menu: 14px;
-  --fsize-text: 14px;
-  --fsize-button: 16px;
+  --primary-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
 }
 
 /* Глобальные стили страницы */
 body {
-  font-family: var(--font-main), Verdana, Geneva, Tahoma, sans-serif;
-  font-size: var(--fsize-text);
+  font-family: var(--primary-font), sans-serif;
   background-color: var(--color-white);
   color: var(--color-primary);
 }
@@ -42,41 +33,48 @@ body {
   list-style-type: none;
 }
 
-/* Стили для логотипа */
+/* *Стили для логотипа */
 .logo {
-  font-family: var(--font-logo);
+  font-family: var(--secondary-font);
   font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+
   color: var(--color-primary);
 }
 .logo-blue {
   color: var(--color-brand);
 }
+
+/* *Стили для кнопок */
 .button {
   cursor: pointer;
-  font-size: var(--fsize-button);
-  font-weight: 700;
-  line-height: 30px;
-  letter-spacing: 0.06em;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+
   background-color: var(--color-third);
   color: var(--color-primary);
 }
+/* События кнопок */
 .button:hover,
 .button:focus {
   background-color: var(--color-active);
   color: var(--color-white);
 }
 
-/* Стили для меню */
+/* *Стили для меню */
 .menu {
-  font-weight: 500;
-  font-size: var(--fsize-menu);
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
+  font-weight: 500;
 }
 .menu .link {
   color: var(--color-primary);
 }
-/* реакции меню */
+/* События меню */
 .menu .link:hover,
 .menu .link:focus {
   color: var(--color-active);
@@ -85,16 +83,17 @@ body {
   color: var(--color-active);
 }
 
-/* Стили для контактов */
+/* *Стили для контактов */
 .email,
 .phone {
   font-weight: 500;
-  font-size: var(--fsize-menu);
-  line-height: 16px;
+  font-size: 14px;
+  line-height: 1.14;
   letter-spacing: 0.02em;
+
   color: var(--color-secondary);
 }
-/* реакции контактов */
+/* События контактов */
 .phone:hover,
 .phone:focus,
 .email:hover,
@@ -102,11 +101,11 @@ body {
   color: var(--color-active);
 }
 
-/* Стили для заголовков */
+/* *Стили для заголовков */
 .title {
-  font-size: var(--fsize-title);
   font-weight: 700;
-  line-height: 42px;
+  font-size: 36px;
+  line-height: 1.17;
   text-align: center;
   letter-spacing: 0.03em;
 }
@@ -118,15 +117,24 @@ body {
   font-size: var(--fsize-title);
 }
 
-/* Стили для Героя */
+/* *Стили для Героя */
 .hero {
-  background-color: var(--color-primary);
+  background-color: var(--color-fourth);
 }
 .hero .title {
-  font-size: var(--fsize-hero);
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+
   color: var(--color-white);
 }
 .hero .button {
+  font-weight: 700;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+
   background-color: var(--color-brand);
   color: var(--color-white);
 }
@@ -136,65 +144,77 @@ body {
   color: var(--color-primary);
 }
 
-/* Стили для "Особенности" */
+/* *Стили для "Особенности" */
 .peculiarities .title {
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   text-align: left;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
 .peculiarities .text {
-  font-size: var(--fsize-text);
-  line-height: 24px;
+  font-size: 14px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
+
+  color: var(--color-secondary);
 }
 
 /* Стили для "Чем мы занимаемся"
  */
 
-/* Стили для "Наша команда"
+/* *Стили для "Наша команда"
  */
 .our-team .name {
   font-weight: 500;
   font-size: 16px;
-  line-height: 19px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
 }
 .our-team .profession {
-  font-size: var(--fsize-card-descript);
-  line-height: 19px;
+  font-size: 16px;
+  line-height: 1.19;
   text-align: center;
   letter-spacing: 0.03em;
+
   color: var(--color-secondary);
 }
 
-/* Стили для Портфолио
+/* *Стили для Портфолио
  */
 .portfolio-list .title {
   font-weight: 700;
   font-size: 18px;
-  line-height: 36px;
+  line-height: 2;
   text-align: left;
   letter-spacing: 0.06em;
 }
 .portfolio-list .description {
-  font-size: var(--fsize-card-descript);
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 1.88;
   letter-spacing: 0.03em;
+
   color: var(--color-secondary);
 }
 
-/* Стили для Футер */
+/* *Стили для Футер */
 .footer {
-  background-color: var(--color-footer);
+  background-color: var(--color-fourth);
 }
 .footer .logo {
   color: var(--color-white);
 }
 .address {
   font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+
   color: var(--color-white);
+}
+.address .link {
+  line-height: 1.71;
+  letter-spacing: 0.03em;
 }
